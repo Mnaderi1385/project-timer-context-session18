@@ -1,8 +1,6 @@
 import React from 'react';
 import '../app.css';
 import { context } from './Context';
-import TimerList from './TimerList';
-
 
 let interval;
 class Timer extends React.Component {
@@ -84,6 +82,7 @@ class Timer extends React.Component {
                 <p className="text-center cursor-pointer text-gray-100 text-2xl mt-4 animate-pulse shadow-md select-none shadow-slate-900 flex justify-center items-center w-48 py-3 px-7 rounded-lg mx-auto hover:shadow-lg duration-150" onClick={this.saveTime}>
                     {`${h > 9 ? h : '0' + h} : ${m > 9 ? m : '0' + m} : ${s > 9 ? s : '0' + s}`}
                 </p>
+
                 <div className="flex flex-col sm:flex-row items-center">
                     <button type="button" className="bg-slate-900 text-white px-4 py-3 text-sm mt-5 ml-3 border-2 border-transparent hover:bg-transparent hover:border-slate-900 duration-300 rounded-full flex justify-center items-center" onClick={this.startTimer} title="Start">Start</button>
                     <button type="button" className="bg-slate-900 text-white px-4 py-3 text-sm mt-5 ml-3 border-2 border-transparent hover:bg-transparent hover:border-slate-900 duration-300 rounded-full flex justify-center items-center" onClick={this.stopTimer} title="Stop">Stop</button>

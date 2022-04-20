@@ -1,11 +1,10 @@
 import { useContext } from 'react';
-import { context } from './Context';
 import Item from './Item';
-
+import { context as c} from './Context.jsx';
 
 const TimerList = (props) => {
     // Context
-    const context = useContext(context);
+    const context = useContext(c);
 
     return (
         <div className="w-full mt-6">
