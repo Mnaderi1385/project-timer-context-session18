@@ -14,8 +14,8 @@ const App = () => {
     return (
         <context.Provider
             value={{
-                timeArray: timeArray ,
-                setTimeArray: setTimeArray
+                timeArray,
+                setTimeArray,
             }}
         >
             <div className="flex justify-center items-center min-h-screen flex-col duration-200">
